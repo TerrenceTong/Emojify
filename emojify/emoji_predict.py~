@@ -1,0 +1,31 @@
+import random
+import twitter
+import emoji
+# import itertools
+import pandas as pd
+from itertools import chain
+from keras.preprocessing.sequence import pad_sequences
+import numpy as np
+#from sklearn.model_selection import train_test_split
+from keras import Sequential, optimizers, regularizers
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing.text import one_hot
+from keras.utils import to_categorical
+import keras.callbacks
+from keras.backend import clear_session
+#import json
+
+import os
+# import nb_utils
+from keras.layers import Input, Conv1D, MaxPooling1D, Flatten, Dense, Dropout, LSTM, Embedding, GlobalMaxPooling1D#, Merge 
+from keras.models import Model
+from keras.layers.merge import Concatenate, Average
+
+# from gensim.models import Word2Vec
+
+#读入数据集
+all_tweets = pd.read_csv('data/emojis_homemade1.csv')
+#对数据集中的表情进行统计
+all_tweets['emoji'].value_counts()
+
