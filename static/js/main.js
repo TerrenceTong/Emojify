@@ -29,12 +29,12 @@ function getInput(){
                 }
                 for (let j = 0; j < 10; j++) {
                     if (j == max_index) {
-                        $('#output tr').eq(j + 1).find('td').eq(i).addClass('success');
-                        /* $('#output tr').eq(j + 1).find('td').eq(i).css('background-color', 'red'); */
+                        /* $('#output tr').eq(j + 1).find('td').eq(i).addClass('success'); */
+                        $('#output tr').eq(j + 1).find('td').eq(i).css('background-color', 'blue');
                     } 
                     else {
-                        $('#output tr').eq(j + 1).find('td').eq(i).removeClass('success');
-                        /* $('#output tr').eq(j + 1).find('td').eq(i).css("background-color", ""); */
+                        /* $('#output tr').eq(j + 1).find('td').eq(i).removeClass('success'); */
+                        $('#output tr').eq(j + 1).find('td').eq(i).css("background-color", "");
                     }
                 }
             }
