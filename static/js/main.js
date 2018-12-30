@@ -8,10 +8,10 @@ function getInput(){
         contentType: 'application/json',
         data: JSON.stringify(x_input),
         success: (data) => {
-            for (let i = 0; i < 7; i++) {
+            for (let i = 0; i < 6; i++) {
                 var max = 0;
                 var max_index = 0;
-                for (let j = 0; j < 10; j++) {
+                for (let j = 0; j < 74; j++) {
                     var value = Math.round(data.results[i][j] * 1000);
                     if (value > max) {
                         max = value;
